@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ASCII"?>
+<monaco:Monaco xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:monaco="http://www.frateranatis.org/fx/emf/monaco" language="spelltimesheet" fileExtension="spelltimesheet">
+  <proposalProvider>
+	  <proposals label="Tracking" kind="Function" insertText="${1:start} - ${2:end}: ${3:project} | ${5:description}" insertTextRules="InsertAsSnippet"/>
+	  <proposals label="Break" kind="Function" insertText="Break: ${1:minutes} min" insertTextRules="InsertAsSnippet"/>
+  </proposalProvider>
+  <tokenProvider>
+    <tokens name="custom-Timesheet" pattern="Timesheet" foreground="1884E7" isBold="true"/>
+    <tokens name="custom-Company" pattern="Company" foreground="EFAD65" isBold="true"/>
+    <tokens name="custom-Week" pattern="Week" foreground="74A955" isBold="true"/>
+    <tokens name="custom-JANUARY" pattern="January" foreground="EFAD65" isBold="true"/>
+    <tokens name="custom-FEBRUARY" pattern="February" foreground="EFAD65" isBold="true"/>
+    <tokens name="custom-MARCH" pattern="March" foreground="EFAD65" isBold="true"/>
+    <tokens name="custom-MAY" pattern="May" foreground="EFAD65" isBold="true"/>
+    <tokens name="custom-APRIL" pattern="April" foreground="EFAD65" isBold="true"/>
+    <tokens name="custom-JUNE" pattern="June" foreground="EFAD65" isBold="true"/>
+    <tokens name="custom-JULY" pattern="July" foreground="EFAD65" isBold="true"/>
+    <tokens name="custom-AUGUST" pattern="August" foreground="EFAD65" isBold="true"/>
+    <tokens name="custom-SEPTEMBER" pattern="September" foreground="EFAD65" isBold="true"/>
+    <tokens name="custom-OCTOBER" pattern="October" foreground="EFAD65" isBold="true"/>
+    <tokens name="custom-NOVEMBER" pattern="Novemver" foreground="EFAD65" isBold="true"/>
+    <tokens name="custom-DECEMBER" pattern="December" foreground="EFAD65" isBold="true"/>
+    <tokens name="custom-Break" pattern="Break" foreground="EFAD65" isBold="true"/>
+    <tokens name="custom-date" pattern="date" foreground="A3A3A3" isBold="true"/>
+    <tokens name="custom-startTime" pattern="start" foreground="A3A3A3" isBold="true"/>
+    <tokens name="custom-endTime" pattern="end" foreground="A3A3A3" isBold="true"/>
+    <tokens name="custom-projectKey" pattern="project" foreground="A3A3A3" isBold="true"/>
+    <tokens name="custom-descriptionAtttribute" pattern="description" foreground="A3A3A3" isBold="true"/>
+  </tokenProvider>
+  <lensProvider>
+    <codeLenses startLineNumber="1" startColumn="1" endLineNumber="1" endColumn="1" title="Add String Template">
+      <command id="addStringTemplateCommand" script="editorView.trigger('keyboard', 'type', {text: `text on multiple line`});"/>
+    </codeLenses>
+  </lensProvider>
+</monaco:Monaco>

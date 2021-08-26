@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<modul:Modul xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modul="http://www.frateranatis.org/fx/emf/modul" 
+	id="de.dc.emf.fx.workbench.jmetro.ui.times.times" name="Times">
+	  <extensionPoints name="Views">
+	    <units xsi:type="modul:GeneralView"/>
+	    <units xsi:type="modul:GeneralView" type="HISTORY"/>
+	    <units xsi:type="modul:View" id="de.dc.workbench.fx.ui.timesheet.app.view.TimesProjectExplorer" name="Project Explorer" uri="de.dc.workbench.fx.ui.timesheet.app.view.TimesProjectExplorer"/>
+	    <units xsi:type="modul:View" id="de.dc.workbench.fx.ui.timesheet.app.view.TimesOutline" name="Times Outline" uri="de.dc.workbench.fx.ui.timesheet.app.view.TimesOutline"/>
+	    <units xsi:type="modul:View" id="de.dc.workbench.fx.ui.timesheet.app.view.TimesCalendarView" name="Times Calendar" uri="de.dc.workbench.fx.ui.timesheet.app.view.TimesCalendarView"/>
+	    <units xsi:type="modul:View" id="de.dc.workbench.fx.ui.timesheet.app.view.TimesCommandsView" name="Times Commands" uri="de.dc.workbench.fx.ui.timesheet.app.view.TimesCommandsView"/>
+	  </extensionPoints>
+	<extensionPoints name="Perspectives">
+	    <units xsi:type="modul:Perspective" id="de.dc.workbench.fx.ui.timesheet.perspective" name="Times Perspective" left="//@extensionPoints.0/@units.1 //@extensionPoints.0/@units.2" 
+	    right="//@extensionPoints.0/@units.3 //@extensionPoints.0/@units.4 //@extensionPoints.0/@units.5" bottom="//@extensionPoints.0/@units.0" associatedEditors="//@extensionPoints.2/@units.0" hideBottom="true"/>
+	</extensionPoints>
+	<extensionPoints name="Editors">
+		<units xsi:type="modul:Editor" id="de.dc.workbench.fx.ui.timesheet.editor.TimesEditor" name="Times Editor" uri="de.dc.workbench.fx.ui.timesheet.editor.TimesEditor" extension="times"/>
+	</extensionPoints>
+	  <extensionPoints name="Services">
+	    <units xsi:type="modul:Service" id="de.dc.workbench.fx.ui.timesheet.service.TimesService" name="Times Service" uriInterface="de.dc.workbench.fx.ui.timesheet.ITimesService" uriImplementation="de.dc.workbench.fx.ui.timesheet.service.TimesService"/>
+	  </extensionPoints>
+  <extensionPoints name="Commands">
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.ExportToTimesheetCommand" name="Export To Timesheet" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.ExportToTimesheetCommand"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.ReloadExplorerCommand" name="Reload Explorer" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.ReloadExplorerCommand"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.MonacoCopyLineCommand" name="Copy To Clipboard" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.MonacoCopyLineCommand"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.FormatCodeCommand" name="Format Code" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.FormatCodeCommand"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.EditorFoldAllCommand" name="Fold All" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorFoldAllCommand"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.EditorUnfoldAllCommand" name="Unfold All" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorUnfoldAllCommand"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.EditorTolowerCaseCommand" name="To LowerCase" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorTolowerCaseCommand"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.EditorToTitleCaseCommand" name="To TitleCase" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorToTitleCaseCommand"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.EditorToUpperCaseCommand" name="To UpperCase" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorToUpperCaseCommand"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.EditorTransposeLettersCommand" name="Transpose Letters" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorTransposeLettersCommand"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.EditorStartFindReplaceCommand" name="Start Find Replace" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorStartFindReplaceCommand"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.EditorChangeFontSizeCommand" name="Change Font Size" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorChangeFontSizeCommand"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.ZoomInCommand" name="Editor Zoom In" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorParameterCommand" parameter="editorView.trigger('zoomIn', 'editor.action.fontZoomIn');"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.ZoomOutCommand" name="Editor Zoom Out" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorParameterCommand" parameter="editorView.trigger('zoomOut', 'editor.action.fontZoomOut');"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.ZoomResetCommand" name="Editor Zoom Reset" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorParameterCommand" parameter="editorView.trigger('zoomReset', 'editor.action.fontZoomReset');"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.DarkThemeCommand" name="Dark Theme" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorParameterCommand" parameter="editorView.updateOptions({ theme: 'vs-dark' });"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.LightThemeCommand" name="Light Theme" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorParameterCommand" parameter="editorView.updateOptions({ theme: 'vs' });"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.ShowMapCommand" name="Show Map" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorParameterCommand" parameter="editorView.updateOptions({ minimap: { enabled: true } });"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.HideMapCommand" name="Hide Map" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorParameterCommand" parameter="editorView.updateOptions({ minimap: { enabled: false } });"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.ShowLinenumberCommand" name="Show Linenumber" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorParameterCommand" parameter="editorView.updateOptions({ lineNumbers: true });"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.HideLinenumberCommand" name="Hide Linenumber" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorParameterCommand" parameter="editorView.updateOptions({ lineNumbers: false });"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.BlockCommentCommand" name="Block Comment" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorParameterCommand" parameter="editorView.trigger('blockComment', 'editor.action.blockComment');"/>
+    <units xsi:type="modul:Command" id="de.dc.workbench.fx.ui.timesheet.app.command.RefactorCommand" name="Refactor" uriHandler="de.dc.workbench.fx.ui.timesheet.app.command.EditorParameterCommand" parameter="editorView.trigger('refactor', 'editor.action.refactor');"/>
+  </extensionPoints>
+</modul:Modul>
